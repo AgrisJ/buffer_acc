@@ -19,12 +19,15 @@ const // INCOME
   // MONTHLY INFLOW SUM
   TOBUFFER = 8680; // 4350 // 3960 // 7400
 
-// CHANGE LOG:
-// DATE: 24-11-2022:
-// EL CALCULATIONS:
-// 575 + 368 + 376 = 1319kwh * 4.6kr = 6068kr (total clever used over 3 months)
-// 11483 - 6068 = 5415kr (total el usage minus clever)
-// Changed TOBUFFER from 7400 to 8680
+/* 
+  CHANGE LOG:
+  -----------------------
+  DATE: 24-11-2022:
+  EL CALCULATIONS:
+    575 + 368 + 376 = 1319kwh * 4.6kr = 6068kr (total clever used over 3 months)
+    11483 - 6068 = 5415kr (total el usage minus clever)
+  - Changed TOBUFFER from 7400 to 8680
+*/
 
 export {
   VUGGESTUE_VALTER_COST,
@@ -40,3 +43,5 @@ export {
   TOBUFFER,
   CLEVER_RETURN,
 };
+
+// TODO: Need to track EL and clever usage to better plan the budget
