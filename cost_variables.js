@@ -14,15 +14,17 @@ const // DAGINSTITUTION COSTS
 
 const // INCOME
   BORNEPENGE = 4168 + 4168, // 9258,
+  CLEVER_RETURN = 600,
   // BORNEPENGE_OLIVER_AFTER_3 = 8295,
   // MONTHLY INFLOW SUM
-  TOBUFFER = 7400; // 4350 // 3960 // only add 390kr
+  TOBUFFER = 8680; // 4350 // 3960 // 7400
 
 // CHANGE LOG:
 // DATE: 24-11-2022:
 // EL CALCULATIONS:
 // 575 + 368 + 376 = 1319kwh * 4.6kr = 6068kr (total clever used over 3 months)
 // 11483 - 6068 = 5415kr (total el usage minus clever)
+// Changed TOBUFFER from 7400 to 8680
 
 export {
   VUGGESTUE_VALTER_COST,
@@ -36,4 +38,5 @@ export {
   EL_CAR_EL_COST,
   BORNEPENGE,
   TOBUFFER,
+  CLEVER_RETURN,
 };
