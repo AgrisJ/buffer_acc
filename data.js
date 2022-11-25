@@ -160,3 +160,4 @@ export const data = [
     ],
   },
 ];
+// TODO: add actual costs field for things like electricity or waste waters..
