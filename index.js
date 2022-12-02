@@ -94,7 +94,7 @@ function stringifyElmHTML(element) {
 ///////////////////////////////////////////////////////////////////////////////////
 // @moneyLeftFromLastMonth = what's left from last month after all current month payments;
 
-const moneyLeftFromLastMonth = 7861; //3470 14552
+const moneyLeftFromLastMonth = 1569; //3470 14552
 //////////////////////////////////////////////////////////////////////////////////
 
 renderApp();
