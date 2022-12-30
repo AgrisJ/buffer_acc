@@ -1,5 +1,6 @@
 import { data } from './data';
 import { App } from './index';
+import { BORNEPENGE } from './cost_variables';
 
 export const whatsLeft = (currMonth, currentOnAccount) => {
   // Starting Point should be July
@@ -96,4 +97,18 @@ function mapOrder(array, order) {
       B = array.indexOf(b);
     return order.indexOf(A) > order.indexOf(B) ? 1 : -1;
   });
+}
+
+export function moneyLeftProcessing(selectedMonth, moneyLeftFromLastMonth) {
+  // If Bornepenge - add that
+  const isBornePengeMonth = data
+    .find((m) => m.Month === selectedMonth)
+    .Money[0].hasOwnProperty('Bornepenge');
+
+  let moneyLeft = moneyLeftFromLastMonth;
+
+  if (isBornePengeMonth) moneyLeft = moneyLeftFromLastMonth + BORNEPENGE;
+  const bornepenge = isBornePengeMonth ? BORNEPENGE : null;
+
+  return { moneyLeft, bornepenge };
 }

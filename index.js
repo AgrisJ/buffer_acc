@@ -1,17 +1,22 @@
 // Import stylesheets
 import './style.css';
-import { whatsLeft } from './whatsLeft';
+import { whatsLeft, moneyLeftProcessing } from './whatsLeft';
 
 export const App = function _App() {
+  const { moneyLeft, bornepenge } = moneyLeftProcessing(
+    App.state.selectedMonth,
+    moneyLeftFromLastMonth
+  );
+
   const lowestMonth = Object.keys(
-    whatsLeft(App.state.selectedMonth, moneyLeftFromLastMonth).lowestPoint
+    whatsLeft(App.state.selectedMonth, moneyLeft).lowestPoint
   );
   const lowestMoney = Object.values(
-    whatsLeft(App.state.selectedMonth, moneyLeftFromLastMonth).lowestPoint
+    whatsLeft(App.state.selectedMonth, moneyLeft).lowestPoint
   );
   const { endCycle, lowestBeforeLowestMoney } = whatsLeft(
     App.state.selectedMonth,
-    moneyLeftFromLastMonth
+    moneyLeft
   );
 
   return `
@@ -32,7 +37,9 @@ export const App = function _App() {
     <option value="December">
   </datalist>
 
-<p id="info">Money left from last month: ${moneyLeftFromLastMonth}</p>
+<p id="info">Money left from last month: ${moneyLeftFromLastMonth} ${
+    bornepenge ? '(+' + bornepenge + ')' : ''
+  }</p>
 <p id="info">End cycle profit: ${endCycle}</p>
 <p id="buffer">Mid-profit until "${lowestMonth}":  ${lowestMoney}</p>
 <p id="untilBuffer">Mid-profit + borrow until "${lowestMonth}" of TOTAL:  ${lowestBeforeLowestMoney}</p>
@@ -63,14 +70,18 @@ App.renderList = () => {
   const ul = document.createElement('ul');
   ul.setAttribute('id', 'list');
 
-  const arr = whatsLeft(
+  const { moneyLeft } = moneyLeftProcessing(
     App.state.selectedMonth,
     moneyLeftFromLastMonth
-  ).wholePeriod.forEach((item) => {
-    let li = document.createElement('li');
-    ul.appendChild(li);
-    li.innerHTML += `${Object.keys(item)}: ${Object.values(item)}`;
-  });
+  );
+
+  const arr = whatsLeft(App.state.selectedMonth, moneyLeft).wholePeriod.forEach(
+    (item) => {
+      let li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML += `${Object.keys(item)}: ${Object.values(item)}`;
+    }
+  );
   return stringifyElmHTML(ul);
 };
 
@@ -94,7 +105,7 @@ function stringifyElmHTML(element) {
 ///////////////////////////////////////////////////////////////////////////////////
 // @moneyLeftFromLastMonth = what's left from last month after all current month payments;
 
-const moneyLeftFromLastMonth = 1569; //3470 14552
+const moneyLeftFromLastMonth = 2968; //3470 14552
 //////////////////////////////////////////////////////////////////////////////////
 
 renderApp();
