@@ -20,22 +20,20 @@ export const App = function _App() {
   );
 
   return `
-  <label>Choose Current Month:
-  ${_App.renderMonthInput()}
-  </label>
-  <datalist id="months">
-    <option value="January">
-    <option value="February">
-    <option value="March">
-    <option value="April">
-    <option value="June">
-    <option value="July">
-    <option value="August">
-    <option value="September">
-    <option value="October">
-    <option value="November">
-    <option value="December">
-  </datalist>
+  <label>Choose Current Month:</label>
+  <select id="currMonth">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+  </select>
 
 <p id="info">Money left from last month: ${moneyLeftFromLastMonth} ${
     bornepenge ? '(+' + bornepenge + ')' : ''
@@ -56,14 +54,6 @@ App.state = {
     renderApp();
     selectMonthListener();
   },
-};
-
-App.renderMonthInput = () => {
-  const input = document.createElement('input');
-  input.setAttribute('id', 'currMonth');
-  input.setAttribute('list', 'months');
-  input.setAttribute('type', 'search');
-  return stringifyElmHTML(input);
 };
 
 App.renderList = () => {
