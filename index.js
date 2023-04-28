@@ -26,6 +26,7 @@ export const App = function _App() {
     <option value="February">February</option>
     <option value="March">March</option>
     <option value="April">April</option>
+    <option value="May">May</option>
     <option value="June">June</option>
     <option value="July">July</option>
     <option value="August">August</option>
@@ -95,7 +96,7 @@ function stringifyElmHTML(element) {
 ///////////////////////////////////////////////////////////////////////////////////
 // @moneyLeftFromLastMonth = what's left from last month after all current month payments;
 
-const moneyLeftFromLastMonth = 6050; // before 11908
+const moneyLeftFromLastMonth = 12056; // before 11908
 //////////////////////////////////////////////////////////////////////////////////
 
 renderApp();
