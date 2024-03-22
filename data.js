@@ -33,7 +33,7 @@ export const data = [
     Money: [
       {
         Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         //Spildevand: -4000, // year 2019
         // Spildevand: vari.SPILDEVAND_COST,
         Spildevand: -4692, // actual cost : 23-02-2023
@@ -49,8 +49,8 @@ export const data = [
     Month: 'April',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Bornepenge: vari.BORNEPENGE,
         ClubActivityOliver: vari.CLUB_ACTIVITY_OLIVER_COST,
         CleverReturn: vari.CLEVER_RETURN,
@@ -64,8 +64,8 @@ export const data = [
     Month: 'May',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Varmeværk: vari.VARMEVÆRK_COST,
         CleverReturn: vari.CLEVER_RETURN,
         Electricity: vari.EL_COST,
@@ -78,8 +78,8 @@ export const data = [
     Month: 'June',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Electricity: vari.EL_COST,
         ElCarFuel: vari.EL_CAR_EL_COST,
         FromFood: vari.TOBUFFER,
@@ -103,8 +103,8 @@ export const data = [
     Month: 'August',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Vandværk: vari.VANDVÆRK_COST,
         Varmeværk: vari.VARMEVÆRK_COST,
         CleverReturn: vari.CLEVER_RETURN,
@@ -118,8 +118,8 @@ export const data = [
     Month: 'September',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Spildevand: vari.SPILDEVAND_COST,
         Renovation: vari.RENOVATION_COST,
         Electricity: vari.EL_COST,
@@ -132,8 +132,8 @@ export const data = [
     Month: 'October',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Bornepenge: vari.BORNEPENGE,
         ClubActivityOliver: vari.CLUB_ACTIVITY_OLIVER_COST,
         ClubActivityValter: vari.CLUB_ACTIVITY_VALTER_COST,
@@ -148,8 +148,8 @@ export const data = [
     Month: 'November',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Varmeværk: vari.VARMEVÆRK_COST,
         CleverReturn: vari.CLEVER_RETURN,
         Electricity: vari.EL_COST,
@@ -162,8 +162,8 @@ export const data = [
     Month: 'December',
     Money: [
       {
-        Bornehave: vari.BORNEHAVE_OLIVER_WITH_VALTER_COST,
-        Vuggestue: vari.VUGGESTUE_VALTER_COST,
+        Bornehave: vari.SFO_OLIVER_COST,
+        Vuggestue: vari.BORNEHAVE_VALTER_COST,
         Electricity: vari.EL_COST,
         ElCarFuel: vari.EL_CAR_EL_COST,
         FromFood: vari.TOBUFFER,
