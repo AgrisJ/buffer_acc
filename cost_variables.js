@@ -13,7 +13,7 @@ const // DAGINSTITUTION COSTS
   VARMEVÆRK_COST = -3070, // was 920 every month // 5800kr new price from 2023 // later -3872
   SPILDEVAND_COST = -3256, // -3287 year 2021/1 // -2507 2023
   RENOVATION_COST = -470,
-  EL_COST = -1700, // -400: before 31-07-2023 // from 09/2024 including also clever
+  EL_COST = -1800 // -400: before 31-07-2023 // from 09/2024 including also clever
   // EL_CAR_EL_COST = -1200; // -1500:  before 31-5-2023
 
 const // INCOME
