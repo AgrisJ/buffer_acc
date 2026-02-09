@@ -35,6 +35,7 @@ export const data = [
         //Spildevand: -4000, // year 2019
         Spildevand: vari.SPILDEVAND_COST,
         // Spildevand: -4999, // actual cost : 01-03-2025
+        // Spildevand: -6628, // actual cost : 01-03-2026
         // Spildevand: -4692, // actual cost : 23-02-2023
         Ejendommenskat: vari.EJENDOMMENSKAT_COST, // from Feb to March at 2025 // -3918 actual cost : 01-03-2025
         // Renovation: vari.RENOVATION_COST,

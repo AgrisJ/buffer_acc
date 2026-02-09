@@ -11,7 +11,7 @@ const // DAGINSTITUTION COSTS
   EJENDOMMENSKAT_COST = -3918, // -3150 2020 // -4020 2023 // was twice prY -1806
   VANDVÆRK_COST = -1190, // -1450 2023
   VARMEVÆRK_COST = -3670, // was 920 every month // 5800kr new price from 2023 // later -3872 // -3070 2025
-  SPILDEVAND_COST = -4100, // -3287 year 2021/1 // -2507 2023 // -3256 2025
+  SPILDEVAND_COST = -6628, // -3287 year 2021/1 // -2507 2023 // -3256 2025
   // RENOVATION_COST = -470,
   EL_COST = -1800; // -400: before 31-07-2023 // from 09/2024 including also clever
 // EL_CAR_EL_COST = -1200; // -1500:  before 31-5-2023
@@ -43,6 +43,11 @@ const // INCOME
  * - BORNEHAVE_VALTER_COST increasing price to min 3521kr
  * - Ejendommenskat will be payable only once a year - Mar // 3918kr
  * - Renovation is removed - hasn't been there for more than a year
+ */
+
+/**
+ * DATE: 01-03-2026
+ * - Spildevand increasing price to min 6628kr
  */
 
 export {
