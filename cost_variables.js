@@ -17,11 +17,11 @@ const // DAGINSTITUTION COSTS
 // EL_CAR_EL_COST = -1200; // -1500:  before 31-5-2023
 
 const // INCOME
-  BORNEPENGE = 4168 + 4168, // 9258,
+  BORNEPENGE = 3795 + 3795, // 7590,
   // CLEVER_RETURN = 600,
   // BORNEPENGE_OLIVER_AFTER_3 = 8295,
   // MONTHLY INFLOW SUM
-  TOBUFFER = 9320; // 4350 // 3960 // 7400 // 8680 // 9320 - (4k more for buffer - bc need only 5320)
+  TOBUFFER = 9570; // 4350 // 3960 // 7400 // 8680 // 9320 - (4k more for buffer - bc need only 5320) // 9570 (bornepenge less)
 
 /* 
   CHANGE LOG:
